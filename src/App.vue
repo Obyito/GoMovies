@@ -3,7 +3,7 @@
     <v-toolbar dark app>
       <v-flex mt-1 xs3>
         <router-link to='/' tag='span'>
-        <img src="../src/assets/gomovieslogo.png" width="40%" height="60%" cursor="pointe">
+        <img src="../src/assets/gomovieslogo.png" width="70%" height="90%" cursor="pointe">
         </router-link>
       </v-flex>
       <v-spacer></v-spacer>
