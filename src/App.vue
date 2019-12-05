@@ -8,11 +8,11 @@
       </v-flex>
       <v-spacer></v-spacer>
       <v-flex xs8 sm6 md6>
-        <v-text-field label='Votre recherche' v-model='searchString'>
+        <v-text-field label='Votre recherche' v-model="searchString">
         </v-text-field>
         </v-flex>
         <v-flex xs4>
-      <v-btn outline :disabled="!dataAvailable" @click="searchMovie">
+      <v-btn outline :disabled="!dataAvailable" v-model="searchButton" @click="searchMovie">
        <span>Go !</span>
       </v-btn>
         </v-flex>
@@ -22,7 +22,6 @@
     </v-content>
   </v-app>
 </template>
-
 
 <script>
 export default {

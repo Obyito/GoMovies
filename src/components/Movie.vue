@@ -46,7 +46,7 @@
               <v-btn color="primary" flat @click="dialog = false">Fermer</v-btn>
             </v-card-actions>
           </v-card>
-        </v-dialog> 
+        </v-dialog>
           </v-card-actions>
         </v-card>
       </v-flex>

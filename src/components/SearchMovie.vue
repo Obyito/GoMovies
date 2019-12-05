@@ -22,7 +22,7 @@
         <v-card shaped>
           <v-img :src="item.Poster" aspect-ratio="1">
           </v-img>
-          
+
           <v-card-title primary-title>
             <div>
               <h2>{{item.Title}}</h2>
