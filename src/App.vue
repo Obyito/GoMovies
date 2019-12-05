@@ -11,6 +11,31 @@
         <v-text-field label='Votre recherche' v-model="searchString">
         </v-text-field>
         </v-flex>
+        <v-flex>
+          <v-menu
+  offset-y
+  content-class="dropdown-menu"
+  transition="slide-y-transition">
+  <v-btn
+  slot="activator"
+    color="primary"
+  >
+    Filtres
+  </v-btn>
+  <v-card>
+    <v-list dense>
+      <v-list-tile
+        v-for="filtres in filtres"
+        :key="filtres"
+      >
+        <v-list-tile-title
+          v-text="filtres"
+        />
+      </v-list-tile>
+    </v-list>
+      </v-card>
+        </v-menu>
+        </v-flex>
         <v-flex xs4>
       <v-btn outline :disabled="!dataAvailable" v-model="searchButton" @click="searchMovie">
        <span>Go !</span>
@@ -30,7 +55,13 @@ export default {
   },
   data () {
     return {
-      searchString: ''
+      searchString: '',
+      filtres: [
+        'Film',
+        'Série',
+        'Populaire',
+        'Récent',
+      ]
     }
   },
   methods: {
