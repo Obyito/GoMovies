@@ -10,7 +10,7 @@
     "test:unit": "vue-cli-service test:unit --watch"
   },
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "cypress": "^3.6.1",
     "jest": "^24.9.0",
     "node": "^13.1.0",
